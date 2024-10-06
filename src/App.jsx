@@ -12,8 +12,9 @@ function App() {
   return (
     <>
       <NavbarStandardTemplate />
-      <Container.Root>
-        <Card.Container style={{ backgroundColor: "lightgrey", minHeight: "650px", maxHeight: "650px" }} >
+      <Container.Root style={{ minHeight: "750px", maxHeight: "750px"  }}>
+        <Container.Alternative>
+          <Card.Container style={{ backgroundColor: "lightgrey", minHeight: "650px", maxHeight: "650px" }} >
           <Card.Content>
             <Text.Heading>
               Lorem ipsum dolor
@@ -30,23 +31,23 @@ function App() {
             </Text.Heading>
           </Card.Content>
         </Card.Container>
+        </Container.Alternative>
       </Container.Root>
       <Container.Root style={{ backgroundColor: "lightgrey", flexDirection: "column", padding: "30px", gap: "25px" }} >
         <Text.Heading>
           Lorem ipsum dolor sit amet
         </Text.Heading>
-        <Card.Content>
-          <Hero.RootBackground src={imageTest} style={{ width: "100%", height: "100%" }}/>
+        <Card.Content style={{ backgroundImage: `url(${imageTest})`, width: "100%"}}>
         </Card.Content>
         <Button.Content>
           Lorem ipsum, dolor sit
         </Button.Content>
       </Container.Root>
-      <Container.Root style={{ flexDirection: "column", paddingTop: "30px", paddingBottom: "30px", gap: "25px" }} >
+      <Container.Root style={{ flexDirection: "column", padding: "30px", gap: "25px", minHeight: "750px", maxHeight: "750px" }} >
         <Text.Heading>
           Lorem ipsum dolor sit amet
         </Text.Heading>
-        <Container.Root style={{ width: "100%", justifyContent: "space-evenly", paddingLeft: "0", paddingRight: "0" }} >
+        <Container.Alternative style={{ width: "100%", justifyContent: "space-between", paddingLeft: "0", paddingRight: "0" }} >
           <Card.Container style={{ backgroundColor: "lightgrey", minHeight: "550px", maxHeight: "550px" }} >
             <Card.Content>
               <Text.Heading>
@@ -77,7 +78,7 @@ function App() {
               </Text.Heading>
             </Card.Content>
           </Card.Container>
-        </Container.Root>
+        </Container.Alternative>
         <Button.Content>
           Lorem ipsum, dolor sit
         </Button.Content>
@@ -100,11 +101,11 @@ function App() {
         <Button.Content>
           Lorem ipsum, dolor sit
         </Button.Content>
-        <Container.Root style={{ height: "100%", padding: "0", gap: "15px", margin: "0", justifyContent: "space-between" }}>
-          <div style={{ width: "285px", height: "140px", backgroundColor: "grey" }}></div>
-          <div style={{ width: "285px", height: "140px", backgroundColor: "grey" }}></div>
-          <div style={{ width: "285px", height: "140px", backgroundColor: "grey" }}></div>
-        </Container.Root>
+        <Container.Alternative style={{ height: "100%", padding: "0", gap: "15px", margin: "0", justifyContent: "space-between" }}>
+          <div style={{ width: "385px", height: "140px", backgroundColor: "grey" }}></div>
+          <div style={{ width: "385px", height: "140px", backgroundColor: "grey" }}></div>
+          <div style={{ width: "385px", height: "140px", backgroundColor: "grey" }}></div>
+        </Container.Alternative>
         <Button.Content>
           Lorem ipsum, dolor sit
         </Button.Content>
