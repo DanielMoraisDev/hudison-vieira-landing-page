@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const StyledCardRoot = styled.div`
+export const StyledCardContainer = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;

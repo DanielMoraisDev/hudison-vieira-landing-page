@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types'
 
-import { StyledSocialMediaContent } from './styles/HeroSocialMediaContent'
+import { StyledHeroSocialMediaContent } from './styles/HeroSocialMediaContent'
 
 const HeroSocialMediaContent = ({ children, ...props }) => {
     return (
-        <StyledSocialMediaContent {...props}>
+        <StyledHeroSocialMediaContent {...props}>
             {children}
-        </StyledSocialMediaContent>
+        </StyledHeroSocialMediaContent>
     )
 }
 

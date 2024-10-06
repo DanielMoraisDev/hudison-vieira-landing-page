@@ -2,9 +2,9 @@ import PropTypes from 'prop-types'
 
 import { StyledHeroRootBackground } from "./styles/HeroRootBackground"
 
-const HeroRootBackground = ({ backgroundImage, children, ...props }) => {
+const HeroRootBackground = ({ children, ...props }) => {
     return (
-        <StyledHeroRootBackground style={{backgroundImage: `url(${backgroundImage})`}} {...props}>
+        <StyledHeroRootBackground {...props}>
             {children}
         </StyledHeroRootBackground>
     )

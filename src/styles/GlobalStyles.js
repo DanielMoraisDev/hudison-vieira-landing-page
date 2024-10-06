@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
     #root {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     body,

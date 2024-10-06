@@ -1,9 +1,9 @@
 import CardContent from "./CardContent"
 import CardImage from "./CardImage"
-import CardRoot from "./CardRoot"
+import CardContainer from "./CardContainer"
 
 export const Card = {
-    Root: CardRoot,
+    Container: CardContainer,
     Content: CardContent,
     Image: CardImage
 }
