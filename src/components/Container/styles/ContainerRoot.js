@@ -11,9 +11,9 @@ export const StyledContainerRoot = styled.div`
     width: 100%;
     height: 860px;
 
-    @media (min-width: 1224px) { 
-        padding-left: 80px !important;
-        padding-right: 80px !important;
+    @media (max-width: 800px) {
+        min-height: 1024px !important;
+        max-height: 1224px !important;
     }
 
     @media (min-width: 1110px) { 
@@ -40,6 +40,4 @@ export const StyledContainerRoot = styled.div`
         padding-left: 280px !important;
         padding-right: 280px !important;
     }
-
-
 `

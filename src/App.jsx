@@ -14,7 +14,7 @@ function App() {
       <NavbarStandardTemplate />
       <Container.Root style={{ minHeight: "750px", maxHeight: "750px"  }}>
         <Container.Alternative>
-          <Card.Container style={{ backgroundColor: "lightgrey", minHeight: "650px", maxHeight: "650px" }} >
+          <Card.Home>
           <Card.Content>
             <Text.Heading>
               Lorem ipsum dolor
@@ -23,22 +23,24 @@ function App() {
               Lorem ipsum dolor
             </Text.Heading>
           </Card.Content>
-        </Card.Container>
-        <Card.Container style={{ backgroundColor: "lightgrey", minHeight: "650px", maxHeight: "650px" }} >
+        </Card.Home>
+        <Card.Home>
           <Card.Content>
             <Text.Heading>
               SLIDE
             </Text.Heading>
           </Card.Content>
-        </Card.Container>
+        </Card.Home>
         </Container.Alternative>
       </Container.Root>
       <Container.Root style={{ backgroundColor: "lightgrey", flexDirection: "column", padding: "30px", gap: "25px" }} >
         <Text.Heading>
           Lorem ipsum dolor sit amet
         </Text.Heading>
-        <Card.Content style={{ backgroundImage: `url(${imageTest})`, width: "100%"}}>
+        <Container.Alternative>
+          <Card.Content style={{ backgroundImage: `url(${imageTest})`, width: "100%"}}>
         </Card.Content>
+        </Container.Alternative>
         <Button.Content>
           Lorem ipsum, dolor sit
         </Button.Content>
@@ -47,8 +49,8 @@ function App() {
         <Text.Heading>
           Lorem ipsum dolor sit amet
         </Text.Heading>
-        <Container.Alternative style={{ width: "100%", justifyContent: "space-between", paddingLeft: "0", paddingRight: "0" }} >
-          <Card.Container style={{ backgroundColor: "lightgrey", minHeight: "550px", maxHeight: "550px" }} >
+        <Container.Alternative style={{ width: "100%", justifyContent: "space-between" }} >
+          <Card.Mid>
             <Card.Content>
               <Text.Heading>
                 Lorem ipsum dolor
@@ -57,8 +59,8 @@ function App() {
                 Lorem ipsum dolor
               </Text.Heading>
             </Card.Content>
-          </Card.Container>
-          <Card.Container style={{ backgroundColor: "lightgrey", minHeight: "550px", maxHeight: "550px" }} >
+          </Card.Mid>
+          <Card.Mid>
             <Card.Content>
               <Text.Heading>
                 Lorem ipsum dolor
@@ -67,8 +69,8 @@ function App() {
                 Lorem ipsum dolor
               </Text.Heading>
             </Card.Content>
-          </Card.Container>
-          <Card.Container style={{ backgroundColor: "lightgrey", minHeight: "550px", maxHeight: "550px" }} >
+          </Card.Mid>
+          <Card.Mid>
             <Card.Content>
               <Text.Heading>
                 Lorem ipsum dolor
@@ -77,13 +79,13 @@ function App() {
                 Lorem ipsum dolor
               </Text.Heading>
             </Card.Content>
-          </Card.Container>
+          </Card.Mid>
         </Container.Alternative>
         <Button.Content>
           Lorem ipsum, dolor sit
         </Button.Content>
       </Container.Root>
-      <Container.Root style={{ backgroundColor: "lightgrey", flexDirection: "column", padding: "30px", gap: "25px" }} >
+      <Container.Root style={{ backgroundColor: "lightgrey", flexDirection: "column", padding: "30px", gap: "25px", minHeight: "900px", maxHeight: "900px" }} >
         <Text.Heading>
           Lorem ipsum dolor sit amet
         </Text.Heading>
@@ -101,7 +103,7 @@ function App() {
         <Button.Content>
           Lorem ipsum, dolor sit
         </Button.Content>
-        <Container.Alternative style={{ height: "100%", padding: "0", gap: "15px", margin: "0", justifyContent: "space-between" }}>
+        <Container.Alternative style={{ height: "100%", gap: "15px", margin: "0", justifyContent: "space-between", }}>
           <div style={{ width: "385px", height: "140px", backgroundColor: "grey" }}></div>
           <div style={{ width: "385px", height: "140px", backgroundColor: "grey" }}></div>
           <div style={{ width: "385px", height: "140px", backgroundColor: "grey" }}></div>
