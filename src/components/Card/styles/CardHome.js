@@ -11,7 +11,7 @@ export const StyledCardHome = styled.div`
   max-height: 650px;
 
   @media (max-width: 800px) {
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 600px;
+    max-height: 600px;
   }
 `;

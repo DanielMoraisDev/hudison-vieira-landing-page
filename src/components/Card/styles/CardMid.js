@@ -11,7 +11,7 @@ export const StyledCardMid = styled.div`
   max-height: 550px;
 
   @media (max-width: 800px) {
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 340px;
+    max-height: 340px;
   }
 `;

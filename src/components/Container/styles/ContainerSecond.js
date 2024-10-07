@@ -1,19 +1,22 @@
 import styled from "styled-components";
 
-export const StyledContainerRoot = styled.div`
+export const StyledContainerSecond = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
     gap: 15px;
     width: 100%;
-    height: 860px;
+    height: 100%;
 
     @media (max-width: 800px) {
-        min-height: 1424px !important;
-        max-height: 1424px !important;
+        padding: 15px;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    @media (min-width: 1080px) {
+        height: 80%;
     }
 
     @media (min-width: 1110px) { 
@@ -40,4 +43,5 @@ export const StyledContainerRoot = styled.div`
         padding-left: 280px !important;
         padding-right: 280px !important;
     }
+
 `
